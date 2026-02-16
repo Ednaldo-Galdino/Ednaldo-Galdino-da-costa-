@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Objetivo - Gestão Inteligente de Metas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --bg-color: #000814;
+      }
+      body { 
+        font-family: 'Inter', sans-serif; 
+        background-color: var(--bg-color);
+        /* Imagem em alta resolução (4K) que segue o padrão de circuitos neon azuis */
+        background-image: 
+          linear-gradient(rgba(0, 8, 20, 0.4), rgba(0, 8, 20, 0.7)), 
+          url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=2070');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        image-rendering: -webkit-optimize-contrast; /* Melhora a nitidez dos circuitos */
+      }
+      /* Ocultar scrollbar mantendo funcionalidade */
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+      
+      /* Efeito de brilho suave nos painéis */
+      .glass-panel {
+        background: rgba(0, 20, 60, 0.4);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "recharts": "https://esm.sh/recharts@^3.7.0"
+  }
+}
+</script>
+</head>
+  <body class="text-gray-100">
+    <div id="root"></div>
+  </body>
+</html>
